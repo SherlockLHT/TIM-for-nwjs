@@ -1,0 +1,7 @@
+{
+    "name": "helloworld",   //应用名称
+    "main": "index.html",    //应用首页
+    //"main": "index.js",    //应用首页,执行js后手动打开主页
+    "version": "0.0.1",
+    "description": "使用nw.js封装的一个TIM登陆界面"
+}
