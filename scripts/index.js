@@ -1,25 +1,37 @@
-var win = nw.Window.get();
-//win.showDevTools();
+var win = nw.Window.get();//获取当前窗口的window对象
+win.showDevTools();
 
-var menu = new nw.Menu({type:'menubar'});//创建菜单条
+var menu = require("./scripts/menu");
+window.onload=function(){
+    menu.temp();
+    console.log(222);
+}
 
-//添加菜单项
-menu.append(new nw.MenuItem({
-    label: 'Item A',
-    click: function(){
-        alert("Click item A");
-    }
-}));
-menu.append(new nw.MenuItem({
-    type: 'separator'
-}));
-menu.append(new nw.MenuItem({
-    label: 'Item B',
-    click: function(){
-        alert("Click item B");
-    }
-}));
+// var menu = new nw.Menu({type:'menubar'});//创建菜单条
 
+// //添加菜单项
+// menu.append(new nw.MenuItem({
+//     label: '最小化',
+//     click: function(){
+//         win.minimize();
+//     }
+// }));
+// menu.append(new nw.MenuItem({
+//     type: 'separator'
+// }));
+// menu.append(new nw.MenuItem({
+//     label: 'Item B',
+//     click: function(){
+//         console.log("x pos: " + win.x);
+//         console.log("y pos: " + win.y);
+//     }
+// }));
 
+// win.menu = menu;//将创建的菜单栏设置为窗口属性
+// //win.menu = null;//移除菜单
 
-win.menu = menu;//将创建的菜单栏设置为窗口属性
+// //监听最小化事件
+// win.on('minimize', function(){
+//     console.log("最小化");
+// });
+// //win.removeAllListeners('minimize');//移除最小化监听事件
