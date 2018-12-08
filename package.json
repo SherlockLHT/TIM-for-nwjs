@@ -1,8 +1,18 @@
 {
-    "name": "helloworld",   //应用名称，必填项
+    "name": "my-tim",   //应用名称，必填项
     "main": "index.html",    //应用首页，入口，必填项
     //"main": "index.js",    //应用首页,执行js后手动打开主页
     "version": "0.0.1",
     "description": "使用nw.js封装的一个TIM登陆界面",
-    "chromium-args": "--enable-logging=stderr"
+    "window":{
+        "title":"TIM fot nw.js",
+        "icon":"images/logo.ico",
+        "width":430,
+        "mini_width":439,
+        "height":390,
+        "mini_height":390,
+        "toolbar":false,
+        "frame":true   //是否显示外层框架（包含标题栏等）
+        
+    }
 }
