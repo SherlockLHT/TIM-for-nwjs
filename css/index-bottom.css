@@ -1,8 +1,9 @@
 .bottom{
     background-color: #ebf2f9;
-    height: 48px;
-    padding: 10px 0 0 0;
+    height: 38px;
+    padding: 8px 0 0 8px;
     margin: 0;
+    overflow: hidden;
 }
 
 #multiple-account{
@@ -22,6 +23,8 @@
     border-radius: 4px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    margin: 0 79px;
 }
 #sign-in:hover{
     background-color: #3cc3f5;
