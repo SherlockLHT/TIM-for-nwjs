@@ -1,4 +1,6 @@
 var win = nw.Window.get();//获取当前窗口的window对象
+win.x = 1450;
+win.y = 50;
 //win.showDevTools();
 
 var menu = require("./scripts/menu");//加载其他模块
@@ -10,6 +12,7 @@ var menu = require("./scripts/menu");//加载其他模块
 window.onload=function(){
     console.log("ready");
     initButton();
+    
 }
 
 // var menu = new nw.Menu({type:'menubar'});//创建菜单条
