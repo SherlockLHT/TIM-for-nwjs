@@ -9,11 +9,11 @@
         "icon":"images/logo.ico",
         "width":430,
         "mini_width":439,
-        "height":330,
-        "mini_height":330,
+        "height":329,
+        "mini_height":329,
         //"position":"mouse",
         "toolbar":false,
-        "frame":true   //是否显示外层框架（包含标题栏等）
+        "frame":false   //是否显示外层框架（包含标题栏等）
         
     }
 }

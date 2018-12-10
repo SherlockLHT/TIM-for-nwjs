@@ -1,6 +1,8 @@
 var win = nw.Window.get();//获取当前窗口的window对象
-win.x = 1450;
-win.y = 50;
+//win.x = 1450;
+//win.y = 50;
+win.x = 450;
+win.y = 70;
 //win.showDevTools();
 
 var menu = require("./scripts/menu");//加载其他模块
