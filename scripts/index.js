@@ -11,6 +11,11 @@ var menu = require("./scripts/menu");//加载其他模块
 //     console.log(222);
 // }
 
+function moveWin(x, y){
+    win.x = x;
+    win.y = y;
+}
+
 window.onload=function(){
     console.log("ready");
     initButton();

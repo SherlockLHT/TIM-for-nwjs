@@ -12,6 +12,16 @@ function initButton(){
             this.src = image.replace("-hover", "");
         }
     });
+    document.querySelector("#close-button").onclick=function(){
+        console.log("close");
+        win.close();
+    }
+    document.querySelector("#minimize-button").onclick=function(){
+        win.minimize();
+    }
+    document.querySelector("#drop-down-button").onclick=function(){
+        console.log("drop down");
+    }
 }
 
 //exports.initButton = initButton;

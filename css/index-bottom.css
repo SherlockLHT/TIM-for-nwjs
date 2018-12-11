@@ -25,6 +25,7 @@
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: top;
     margin: 0 79px;
+    cursor: default;
 }
 #sign-in:hover{
     background-color: #3cc3f5;
