@@ -19,6 +19,11 @@ function moveWin(x, y){
 window.onload=function(){
     console.log("ready");
     initButton();
+
+    document.querySelector("body").onclick=function(e){
+        console.log("double click");
+        //e.preventDefault();
+    }
     
 }
 
